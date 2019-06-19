@@ -23,7 +23,11 @@ export default {
    return{
      titulo:"proyecto vue cli"
    }
+   
 
+  },
+  methods: {
+    searchmovie: function (title){}
   }
 }
 </script>
