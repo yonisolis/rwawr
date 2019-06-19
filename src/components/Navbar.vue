@@ -1,9 +1,9 @@
 <template>
   <nav class="navbar navbar-light bg-light">
     <a class="navbar-brand"></a>
-    <form class="form-inline" v-on:submit.prevent="mimetodo">
+    <form class="form-inline" v-on:submit.prevent="buscar">
       <input
-        v-model="titlesearch"
+        v-model="titulo"
         class="form-control mr-sm-2"
         type="search"
         placeholder="Search"
@@ -19,9 +19,15 @@ export default {
   name: "Navbar",
   props: ["title"],
   methods: {
-    mimetodo() {
-      console.log("hola");
-    }
+    // buscar() {
+      // console.log("hola");
+    // }
+  },
+  data(){
+   return{
+     titulo:''
+   }
+
   }
 };
 </script>
